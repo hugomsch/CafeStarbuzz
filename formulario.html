@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<meta	http-equiv="Content-Type"	content="text/html;	charset=ISO-8859-1">
+	<title>A Máquina de Grãos do Starbuzz</title>
+</head>
+
+<body>
+	<h1> A Máquina de Grãos do Starbuzz </h1>
+	<h2> Complete o formulário a seguir e clique em "Faça seu Pedido"</h2>
+
+	<form action="http://www.starbuzzcoffee.com/processorder.php" method="GET">
+	 <p> Escolha seus grãos:
+		<select name="Grãos">
+			<option value="House Band">Mistura da Casa</option>
+			<option value="Bolivia">Bolívia Supremo Cultivado na Sombra</option>
+			<option value="Guatemala">Guatemala Orgânico</option>
+			<option value="Kenia">Quênia</option>
+		</select>
+	 <p>Tipo: <br />
+		<input type="radio" name="beatype" value="Inteiro" /> Grão inteiro <br />
+		<input type="radio" name"beantype" value="Moído" checked="checked" /> Grão Moído <br />
+	 </p>
+	 <p> Extras: <br />
+		<input type="checkbox" name="extras[]" value"giftwrap"/> Embalagem para Presente <br/>
+		<input type="checkbox" name="extras[]" value="catalog" checked="checked"/> Incluir catálogo no pedido <br/>
+
+	 </p> 
+
+
+	 </p>
+<form action="http://www.starbuzzcoffee.com/processoroder.php" method="GET">
+	 <p> Enviar para: <br />
+  		Nome:  <input type="text" name="name" /><br />
+ 		Endereço:  <input type="text" name="address" /><br />
+ 	  	Cidade: <input type="text" name="city" /><br />
+ 		Estado:  <input type="text" name="state" /><br />
+ 	  	CEP:  <input type="text" name="zip" /><br />
+	 </p>
+	 <p>Comentários do cliente: <br />
+		<textarea name="comments" rows="10" cols="48"></textarea>
+	 </p>
+	
+	 <p>
+		<input type="submit" name="Order Now"/> <br />
+	 </p>
+
+	</form>
+</body>
+</html>
